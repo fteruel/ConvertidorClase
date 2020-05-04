@@ -30,19 +30,22 @@
         style="@style/estiloCategoria"
         android:text="@string/cocina"
         android:background="@color/categoriaCocina"
-        android:onClick="LanzarCocina"/>
+        android:onClick="LanzarCocina" />
 
     <TextView
         style="@style/estiloCategoria"
         android:text="@string/temperatura"
         android:background="@color/categoriaTemperatura"
-        android:onClick="LanzarTemperatura"/>
+        android:onClick="LanzarTemperatura"
+
+        />
 
     <TextView
         style="@style/estiloCategoria"
         android:text="@string/presion"
         android:background="@color/categoriaPresion"
-        android:onClick="LanzarPresion"/>
+        android:onClick="LanzarPresion"
+        />
 
 
 
