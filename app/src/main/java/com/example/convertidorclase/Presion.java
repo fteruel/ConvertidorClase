@@ -22,59 +22,8 @@ public class Presion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_presion);
 
-        unidadPresion = findViewById(R.id.unidadPresion);
-        resultadoPresion = findViewById(R.id.resultadoPresion);
-    }
-
-    public void ConvertirDe(View view) {
-
-        boolean checked = ((RadioButton) view).isChecked();
-        String unidadSTR = unidadPresion.getText().toString();
-        Float unidadFLT = Float.parseFloat(unidadSTR);
-
-
-        switch(view.getId()) {
-            case R.id.kgDe:
-                if (checked)
-                    convertidoA = unidadFLT;
-
-                    break;
-            case R.id.GDe:
-                if (checked)
-                    convertidoA = unidadFLT*1000;
-                    break;
-        }
-
-
-    }
-
-    public void ConvertirA(View view) {
-
-        boolean checked = ((RadioButton) view).isChecked();
-        String unidadSTR = unidadPresion.getText().toString();
-        Float unidadFLT = Float.parseFloat(unidadSTR);
-
-
-        switch(view.getId()) {
-            case R.id.KgA:
-                if (checked)
-                    resultadoFLT = unidadFLT;
-
-                break;
-            case R.id.GA:
-                if (checked)
-                    resultadoFLT = unidadFLT/1000;
-                break;
-        }
-
-
-
 
     }
 
 
-    public void mostrarResultado(View view) {
-
-        resultadoPresion.setText(resultadoFLT.toString());
-    }
 }

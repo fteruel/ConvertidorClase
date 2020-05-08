@@ -6,76 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".Presion"
     android:orientation="vertical"
+    android:gravity="center"
     >
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/unidadPresion"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-        <RadioGroup
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="16dp">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="KG"
-                android:id="@+id/kgDe"
-                android:onClick="ConvertirDe"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="g"
-                android:id="@+id/GDe"
-                android:onClick="ConvertirDe"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
 
-        </RadioGroup>
-
-        <RadioGroup
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="16dp">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="KG"
-                android:onClick="ConvertirA"
-                android:id="@+id/KgA"/>
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="g"
-                android:onClick="ConvertirA"
-                android:id="@+id/GA"/>
-
-        </RadioGroup>
     </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="Cambiar"
-        android:padding="16dp"
-        android:onClick="mostrarResultado"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/resultadoPresion"
-        android:padding="16dp"/>
-
+        android:text="Convertir"/>
 
 
 
