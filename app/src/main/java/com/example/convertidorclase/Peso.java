@@ -39,6 +39,7 @@ Float resultadoA;
 
         String entradaPesoSTR = entradaPesoET.getText().toString();
 
+
         if(entradaPesoSTR.isEmpty()){
             Toast.makeText(this, "Ingresar valor", Toast.LENGTH_SHORT).show();
             return;
@@ -51,8 +52,7 @@ Float resultadoA;
         switch(seleccionadoDEID) {
             case R.id.KGDE:
                  intermedioDE = entradaPesoFLT;
-                Log.d("De", "convertirPeso: seleccionado KG");
-                break;
+                 break;
             case R.id.GDE:
                 intermedioDE = entradaPesoFLT / 1000;
                 break;
@@ -65,11 +65,9 @@ Float resultadoA;
         switch(seleccionadoAID) {
             case R.id.KGA:
                 resultadoA = intermedioDE;
-
                 break;
             case R.id.GA:
                 resultadoA = intermedioDE * 1000;
-                Log.d("A", "convertirPeso: seleccionado G");
                 break;
             case R.id.LIBRAA:
                 resultadoA = intermedioDE * 2.205f;

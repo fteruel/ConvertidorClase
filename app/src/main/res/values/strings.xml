@@ -6,4 +6,5 @@
     <string name="cocina">Cocina</string>
     <string name="temperatura">Temperatura</string>
     <string name="presion">Presion</string>
+    <string name="convertir">Convertir</string>
 </resources>
