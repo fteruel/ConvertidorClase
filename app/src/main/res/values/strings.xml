@@ -6,4 +6,9 @@
     <string name="cocina">Cocina</string>
     <string name="temperatura">Temperatura</string>
     <string name="presion">Presion</string>
+<<<<<<< Updated upstream
+=======
+    <string name="convertir">Convertir</string>
+    <string name="flour">Harina</string>
+>>>>>>> Stashed changes
 </resources>
