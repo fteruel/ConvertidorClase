@@ -18,14 +18,13 @@ public class Cocina extends AppCompatActivity {
 
         ListView CocinaListaLV = findViewById(R.id.CocinaListaLV);
 
-        List<String> listaCocina = new ArrayList<String>();
+        List<MedidaCocina> listaCocina = new ArrayList<>();
 
-        listaCocina.add("azucar");
-        listaCocina.add("harina");
+        listaCocina.add(new MedidaCocina("Harina", "140g", "70g", "35g"));
+        listaCocina.add(new MedidaCocina("Azucar", "200g", "100", "50g"));
 
-        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(getApplicationContext(),
-                                                                R.layout.fila_cocina, R.id.tituloFila,
-                                                                listaCocina);
+        CocinaAdapter adaptador = new CocinaAdapter(getApplicationContext(), listaCocina);
+
         CocinaListaLV.setAdapter(adaptador);
 
 
